@@ -15,7 +15,7 @@ After installation, open the Anaconda Prompt (Windows) or a terminal (Linux).
 Installation (first use only)
 
 Download this repository from GitHub: Click on Code → Download ZIP. Extract the folder to a location of your choice (e.g. Documents/Phenotyping-Statistics).
-Create a new environment in Anaconda (open "Anaconda Prompt") and install the required libraries:
+Create a new environment in Anaconda (open "Anaconda Prompt", right click, "Run as administrator") and install the required libraries:
 
 cd %USERPROFILE%\Documents\Phenotyping-Statistics
 
