@@ -17,8 +17,8 @@ Installation (first use only)
 Usage
 
 1. Inside the Phenotyping-Statistics folder, insert your data in "Phenotyping_Analysis.xlsx". 
-2. Open RStudio → open Phenotyping_Analysis.R. Session → Set Working Directory → To Source File Location.
-3. Select all code → Run.
+2. Open RStudio → File - Open file - Phenotyping_Analysis.R → Session - Set Working Directory - To Source File Location.
+3. Code - Run region - Run All.
 
 Notes
 
