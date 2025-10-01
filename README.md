@@ -5,7 +5,7 @@ Template for performing statistical analysis of phenotyping values ​​or othe
 
 Requirements (first use only)
 
-The use of Anaconda is recommended (a Python distribution with all necessary tools included).
+The use of Anaconda is recommended (a R distribution with all necessary tools included).
 
 Download and install Anaconda from: https://www.anaconda.com/download.
 During installation, choose: R version: 4.2.0. Default installation settings.
