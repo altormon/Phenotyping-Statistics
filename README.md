@@ -5,36 +5,20 @@ Template for performing statistical analysis of phenotyping values ​​or othe
 
 Requirements (first use only)
 
-The use of Anaconda is recommended (a R distribution with all necessary tools included).
-
-Download and install Anaconda from: https://www.anaconda.com/download.
-During installation, choose: R version: 4.2.0. Default installation settings.
-After installation, open the Anaconda Prompt (Windows) or a terminal (Linux).
+1. Download and install R from: https://cran.r-project.org/bin/windows/.
+2. Download and install RStudio Desktop from: https://posit.co/download/rstudio-desktop/.
 
 
 Installation (first use only)
 
-Download this repository from GitHub: Click on Code → Download ZIP. Extract the folder to a location of your choice (e.g. Documents/Phenotyping-Statistics).
-Create a new environment in Anaconda (open "Anaconda Prompt", right click, "Run as administrator") and install the required libraries:
-
-cd %USERPROFILE%\Documents\Phenotyping-Statistics
-
-conda create -n statistics -c conda-forge r-base r-essentials
-
-conda activate statistics
+1. Download this repository from GitHub: Click on Code → Download ZIP. Extract the folder to a location of your choice (e.g. Documents/Phenotyping-Statistics).
 
 
 Usage
 
-Inside the ASAP folder, place all the images you want to analyze inside the Input folder.
-Run (in "Anaconda Prompt") the inference script (F6) using the pre-trained model (stomata_model.pt is already included):
-
-cd %USERPROFILE%\Documents\Phenotyping-Statistics
-
-conda activate statistics
-
-Rscript Phenotyping_Analysis.R
-
+1. Inside the Phenotyping-Statistics folder, insert your data in "Phenotyping_Analysis.xlsx". 
+2. Open RStudio → open Phenotyping_Analysis.R. Session → Set Working Directory → To Source File Location.
+3. Select all code → Run.
 
 Notes
 
