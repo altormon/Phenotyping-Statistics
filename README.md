@@ -1,6 +1,44 @@
 # Statistics-template
 
-Template for performing statistical analysis of phenotyping values ​​or other experiments. Three files are available: two Excel files and an R script. For the Excel files, data only should be entered in the cells underlined in yellow; the rest of the cells should not be modified. Each file contains the following information:
+Template for performing statistical analysis of phenotyping values ​​or other experiments.
+
+
+Requirements (first use only)
+
+The use of Anaconda is recommended (a Python distribution with all necessary tools included).
+
+Download and install Anaconda from: https://www.anaconda.com/download.
+During installation, choose: R version: 4.2.0. Default installation settings.
+After installation, open the Anaconda Prompt (Windows) or a terminal (Linux).
+
+
+Installation (first use only)
+
+Download this repository from GitHub: Click on Code → Download ZIP. Extract the folder to a location of your choice (e.g. Documents/Phenotyping-Statistics).
+Create a new environment in Anaconda (open "Anaconda Prompt") and install the required libraries:
+
+cd %USERPROFILE%\Documents\Phenotyping-Statistics
+
+conda create -n statistics r=4.2.0
+
+conda activate statistics
+
+
+Usage
+
+Inside the ASAP folder, place all the images you want to analyze inside the Input folder.
+Run (in "Anaconda Prompt") the inference script (F6) using the pre-trained model (stomata_model.pt is already included):
+
+cd %USERPROFILE%\Documents\Phenotyping-Statistics
+
+conda activate statistics
+
+r Phenotyping_Analysis.R
+
+
+Notes
+
+Three files are available: two Excel files and an R script. For the Excel files, data only should be entered in the cells underlined in yellow; the rest of the cells should not be modified. Each file contains the following information:
 
 - Phenotyping_Template.xlsx (NOT NECESSARY FOR STATISTICAL ANALYSIS): in the "Conditions" sheet, enter the names of the control samples (between 1 and 4 samples: WT1, WT2, WT3, and WT4) and the target samples (between 1 and 12 samples: L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, and L12) in cells C13-C28. In cell H5, enter the name of the treatment (maximum 1) to be compared (e.g., elevated CO2), or leave blank if there are no two conditions to compare. In cells H8-H10, enter the names (maximum 3) of the variables to be analyzed (e.g., aerial part weight, root length, and root weight). In cells B3 (with treatment) and C3 (without treatment), enter the number of days the plants were grown to calculate the values ​​for each variable per day (enter 1 if raw values ​​are desired). In cells B36 and C36, enter the percentage (value between 0 and 100) of values ​​to filter, both the lowest (B36) and highest (C36) values. For each leaf in the samples (between WT1 and L12), enter the values ​​per plate, with a maximum of 11 values ​​per plate for shoot weight and root length, and a maximum of 1 value for root weight (or the variable names entered in place of those 3 variables). The results are displayed in the "PartsPerUnit" sheets (values ​​in parts per unit for all samples), "WTAverage" (average values ​​for all controls: WT1, WT2, WT3, and WT4), "GraphicsPlates" (mean, standard deviation, standard error, and t-test values ​​for each sample per plate, both filtered and unfiltered), and "GraphicsAllMeasurements" (mean, standard deviation, standard error, and t-test values ​​for each sample, as total values, not per plate, both filtered and unfiltered). This Excel file is NOT used to perform statistical tests for ANOVA, but it can be used to obtain filtered phenotyping (or other similar experiments) values ​​(cells AC3-AF157 from each sheet with samples: WT1-L12) and, if desired, in parts per unit ("PartsPerUnit" sheet).
 
