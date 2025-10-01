@@ -19,7 +19,7 @@ Create a new environment in Anaconda (open "Anaconda Prompt") and install the re
 
 cd %USERPROFILE%\Documents\Phenotyping-Statistics
 
-conda create -n statistics r=4.2.0
+conda create -n statistics -c conda-forge r-base r-essentials
 
 conda activate statistics
 
@@ -33,7 +33,7 @@ cd %USERPROFILE%\Documents\Phenotyping-Statistics
 
 conda activate statistics
 
-r Phenotyping_Analysis.R
+Rscript Phenotyping_Analysis.R
 
 
 Notes
